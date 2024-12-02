@@ -1,0 +1,118 @@
+/* 기본 스타일 초기화 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 전체 컨테이너 */
+.recommendations-list {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* 추천 여행지 목록 제목 */
+.recommendations-list h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+/* 여행지 목록 스타일 */
+.recommendations-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recommendations-list li {
+    background-color: #eaeaea;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* 여행지 항목 hover 효과 */
+.recommendations-list li:hover {
+    background-color: #dcdcdc;
+    transition: background-color 0.3s ease;
+}
+
+/* 여행지 추가 버튼 */
+.add-place {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add-place button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-place button:hover {
+    background-color: #0056b3;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .recommendations-list {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .recommendations-list h2 {
+        font-size: 22px;
+    }
+
+    .add-place button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

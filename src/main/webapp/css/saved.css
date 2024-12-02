@@ -1,0 +1,77 @@
+/* 저장된 여행지 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 전체 컨테이너 */
+.saved-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 스타일 */
+.saved-container h2 {
+    text-align: center;
+    color: #555;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+/* 저장된 여행지 목록 */
+.saved-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 개별 여행지 항목 */
+.saved-item {
+    padding: 15px;
+    background-color: #eaeaea;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 여행지 이름 */
+.saved-item:hover {
+    background-color: #dcdcdc;
+    transition: background-color 0.3s ease;
+}
+
+/* 버튼 스타일 */
+.saved-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.saved-item button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/* 빈 목록 메시지 */
+.saved-list p {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+}

@@ -1,0 +1,87 @@
+/* 추천 여행지 섹션 */
+.recommend-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommend-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recommend-header h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.recommend-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recommend-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recommend-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recommend-card h3 {
+    font-size: 20px;
+    color: #222;
+    margin: 15px 0;
+}
+
+.recommend-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px;
+}
+
+.recommend-card .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.recommend-card .button:hover {
+    background-color: #0056b3;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .recommend-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recommend-card {
+        width: 90%;
+    }
+}
